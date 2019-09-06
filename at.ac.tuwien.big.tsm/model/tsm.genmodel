@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/at.ac.tuwien.big.tsm/src" modelPluginID="at.ac.tuwien.big.tsm"
+    modelName="Tsm" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>tsm.ecore</foreignModel>
+  <genPackages prefix="Tsm" basePackage="at.ac.tuwien.big" disposableProviderFactory="true"
+      ecorePackage="tsm.ecore#/">
+    <genClasses ecoreClass="tsm.ecore#//StateMachine">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tsm.ecore#//StateMachine/states"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tsm.ecore#//StateMachine/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tsm.ecore#//StateMachine/start"/>
+    </genClasses>
+    <genClasses ecoreClass="tsm.ecore#//State">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tsm.ecore#//State/incoming"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tsm.ecore#//State/outgoing"/>
+    </genClasses>
+    <genClasses ecoreClass="tsm.ecore#//Transition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tsm.ecore#//Transition/timer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tsm.ecore#//Transition/target"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tsm.ecore#//Transition/source"/>
+    </genClasses>
+    <genClasses ecoreClass="tsm.ecore#//TimeEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tsm.ecore#//TimeEvent/time"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="tsm.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tsm.ecore#//NamedElement/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated tsm -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="at.ac.tuwien.big.tsm.presentation.TsmModelWizardID"
+            name="%_UI_TsmModelWizard_label"
+            class="at.ac.tuwien.big.tsm.presentation.TsmModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TsmModelFile.gif">
+         <description>%_UI_TsmModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated tsm -->
+      <editor
+            id="at.ac.tuwien.big.tsm.presentation.TsmEditorID"
+            name="%_UI_TsmEditor_label"
+            icon="icons/full/obj16/TsmModelFile.gif"
+            extensions="tsm"
+            class="at.ac.tuwien.big.tsm.presentation.TsmEditor"
+            contributorClass="at.ac.tuwien.big.tsm.presentation.TsmActionBarContributor">
+      </editor>
+   </extension>
+</plugin>

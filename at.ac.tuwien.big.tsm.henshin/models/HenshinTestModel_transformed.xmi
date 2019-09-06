@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tsm:StateMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tsm="http://big.tuwien.ac.at/tsm" xsi:schemaLocation="http://big.tuwien.ac.at/tsm ../../at.ac.tuwien.big.tsm/model/tsm.ecore" name="TrafficLightStateMachine" start="//@states.0">
+  <states name="green" outgoing="//@transitions.0"/>
+  <states name="yellow" incoming="//@transitions.0"/>
+  <transitions name="NEW-Transition" target="//@states.1" source="//@states.0">
+    <timer time="1"/>
+  </transitions>
+</tsm:StateMachine>

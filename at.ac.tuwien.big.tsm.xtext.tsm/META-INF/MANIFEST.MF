@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: at.ac.tuwien.big.tsm.xtext.tsm
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: at.ac.tuwien.big.tsm.xtext.tsm; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: at.ac.tuwien.big.tsm,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: at.ac.tuwien.big.tsm.xtext.formatting2,
+ at.ac.tuwien.big.tsm.xtext.scoping,
+ at.ac.tuwien.big.tsm.xtext.serializer,
+ at.ac.tuwien.big.tsm.xtext.parser.antlr,
+ at.ac.tuwien.big.tsm.xtext.validation,
+ at.ac.tuwien.big.tsm.xtext.services,
+ at.ac.tuwien.big.tsm.xtext,
+ at.ac.tuwien.big.tsm.xtext.parser.antlr.internal,
+ at.ac.tuwien.big.tsm.xtext.generator
+Import-Package: org.apache.log4j

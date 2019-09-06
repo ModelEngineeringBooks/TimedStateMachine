@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_pBoEcPYpEeejArsKuGiivQ">
+  <imports href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_qpRXsPYpEeejArsKuGiivQ" name="connectState">
+    <lhs xmi:id="_qtP4wPYpEeejArsKuGiivQ" name="Lhs">
+      <nodes xmi:id="_3TtqAPYpEeejArsKuGiivQ" outgoing="_9MA6IPYpEeejArsKuGiivQ _EOhTkPYqEeejArsKuGiivQ _E6eaoPYqEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine"/>
+      </nodes>
+      <nodes xmi:id="_45lboPYpEeejArsKuGiivQ" incoming="_9MA6IPYpEeejArsKuGiivQ _E6eaoPYqEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+      </nodes>
+      <nodes xmi:id="_506bcPYpEeejArsKuGiivQ" incoming="_EOhTkPYqEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+      </nodes>
+      <edges xmi:id="_9MA6IPYpEeejArsKuGiivQ" source="_3TtqAPYpEeejArsKuGiivQ" target="_45lboPYpEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/start"/>
+      </edges>
+      <edges xmi:id="_EOhTkPYqEeejArsKuGiivQ" source="_3TtqAPYpEeejArsKuGiivQ" target="_506bcPYpEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+      </edges>
+      <edges xmi:id="_E6eaoPYqEeejArsKuGiivQ" source="_3TtqAPYpEeejArsKuGiivQ" target="_45lboPYpEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_qtRG4PYpEeejArsKuGiivQ" name="Rhs">
+      <nodes xmi:id="_3TuREPYpEeejArsKuGiivQ" outgoing="_9MBhMPYpEeejArsKuGiivQ _EOh6oPYqEeejArsKuGiivQ _E6fBsPYqEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine"/>
+      </nodes>
+      <nodes xmi:id="_45mCsPYpEeejArsKuGiivQ" incoming="_9MBhMPYpEeejArsKuGiivQ _E6fBsPYqEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+      </nodes>
+      <nodes xmi:id="_507CgPYpEeejArsKuGiivQ" incoming="_EOh6oPYqEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+      </nodes>
+      <edges xmi:id="_9MBhMPYpEeejArsKuGiivQ" source="_3TuREPYpEeejArsKuGiivQ" target="_45mCsPYpEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/start"/>
+      </edges>
+      <edges xmi:id="_EOh6oPYqEeejArsKuGiivQ" source="_3TuREPYpEeejArsKuGiivQ" target="_507CgPYpEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+      </edges>
+      <edges xmi:id="_E6fBsPYqEeejArsKuGiivQ" source="_3TuREPYpEeejArsKuGiivQ" target="_45mCsPYpEeejArsKuGiivQ">
+        <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_3Tx7cPYpEeejArsKuGiivQ" origin="_3TtqAPYpEeejArsKuGiivQ" image="_3TuREPYpEeejArsKuGiivQ"/>
+    <mappings xmi:id="_45mpwPYpEeejArsKuGiivQ" origin="_45lboPYpEeejArsKuGiivQ" image="_45mCsPYpEeejArsKuGiivQ"/>
+    <mappings xmi:id="_507CgfYpEeejArsKuGiivQ" origin="_506bcPYpEeejArsKuGiivQ" image="_507CgPYpEeejArsKuGiivQ"/>
+    <multiRules xmi:id="_fp4cgPYqEeejArsKuGiivQ">
+      <lhs xmi:id="_fp6RsPYqEeejArsKuGiivQ" name="Lhs">
+        <nodes xmi:id="_fp7f1fYqEeejArsKuGiivQ" outgoing="_fp8G4_YqEeejArsKuGiivQ _fp8G5vYqEeejArsKuGiivQ _fp8t8PYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine"/>
+        </nodes>
+        <nodes xmi:id="_fp8G4fYqEeejArsKuGiivQ" incoming="_fp8G4_YqEeejArsKuGiivQ _fp8t8PYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+        </nodes>
+        <nodes xmi:id="_fp8G5PYqEeejArsKuGiivQ" incoming="_fp8G5vYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+        </nodes>
+        <edges xmi:id="_fp8G4_YqEeejArsKuGiivQ" source="_fp7f1fYqEeejArsKuGiivQ" target="_fp8G4fYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/start"/>
+        </edges>
+        <edges xmi:id="_fp8G5vYqEeejArsKuGiivQ" source="_fp7f1fYqEeejArsKuGiivQ" target="_fp8G5PYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+        </edges>
+        <edges xmi:id="_fp8t8PYqEeejArsKuGiivQ" source="_fp7f1fYqEeejArsKuGiivQ" target="_fp8G4fYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+        </edges>
+        <formula xsi:type="henshin:Not" xmi:id="_fp9VAPYqEeejArsKuGiivQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_fp9VAfYqEeejArsKuGiivQ">
+            <conclusion xmi:id="_fp9VAvYqEeejArsKuGiivQ">
+              <nodes xmi:id="_fp_KMPYqEeejArsKuGiivQ" outgoing="_fqA_YfYqEeejArsKuGiivQ _fqBmcPYqEeejArsKuGiivQ _fqBmcfYqEeejArsKuGiivQ _QPB4EPYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine"/>
+              </nodes>
+              <nodes xmi:id="_fqAYUPYqEeejArsKuGiivQ" incoming="_fqA_YfYqEeejArsKuGiivQ _fqBmcfYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+              </nodes>
+              <nodes xmi:id="_fqAYUvYqEeejArsKuGiivQ" incoming="_fqBmcPYqEeejArsKuGiivQ _WOeSAPYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+              </nodes>
+              <nodes xmi:id="_NGTzoPYqEeejArsKuGiivQ" incoming="_QPB4EPYqEeejArsKuGiivQ" outgoing="_WOeSAPYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//Transition"/>
+              </nodes>
+              <edges xmi:id="_fqA_YfYqEeejArsKuGiivQ" source="_fp_KMPYqEeejArsKuGiivQ" target="_fqAYUPYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/start"/>
+              </edges>
+              <edges xmi:id="_fqBmcPYqEeejArsKuGiivQ" source="_fp_KMPYqEeejArsKuGiivQ" target="_fqAYUvYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+              </edges>
+              <edges xmi:id="_fqBmcfYqEeejArsKuGiivQ" source="_fp_KMPYqEeejArsKuGiivQ" target="_fqAYUPYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+              </edges>
+              <edges xmi:id="_QPB4EPYqEeejArsKuGiivQ" source="_fp_KMPYqEeejArsKuGiivQ" target="_NGTzoPYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/transitions"/>
+              </edges>
+              <edges xmi:id="_WOeSAPYqEeejArsKuGiivQ" source="_NGTzoPYqEeejArsKuGiivQ" target="_fqAYUvYqEeejArsKuGiivQ">
+                <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//Transition/target"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_fp_xQPYqEeejArsKuGiivQ" origin="_fp7f1fYqEeejArsKuGiivQ" image="_fp_KMPYqEeejArsKuGiivQ"/>
+            <mappings xmi:id="_fqAYUfYqEeejArsKuGiivQ" origin="_fp8G4fYqEeejArsKuGiivQ" image="_fqAYUPYqEeejArsKuGiivQ"/>
+            <mappings xmi:id="_fqA_YPYqEeejArsKuGiivQ" origin="_fp8G5PYqEeejArsKuGiivQ" image="_fqAYUvYqEeejArsKuGiivQ"/>
+          </child>
+        </formula>
+      </lhs>
+      <rhs xmi:id="_fp64wPYqEeejArsKuGiivQ" name="Rhs">
+        <nodes xmi:id="_fp64wfYqEeejArsKuGiivQ" outgoing="_fp7f0PYqEeejArsKuGiivQ _fp7f0_YqEeejArsKuGiivQ _fp7f1PYqEeejArsKuGiivQ _qxzzMPYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine"/>
+        </nodes>
+        <nodes xmi:id="_fp64w_YqEeejArsKuGiivQ" incoming="_fp7f0PYqEeejArsKuGiivQ _fp7f1PYqEeejArsKuGiivQ _0EBlcvYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+        </nodes>
+        <nodes xmi:id="_fp7f0fYqEeejArsKuGiivQ" incoming="_fp7f0_YqEeejArsKuGiivQ _zfFFUPYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//State"/>
+        </nodes>
+        <nodes xmi:id="_mqlfIfYqEeejArsKuGiivQ" incoming="_qxzzMPYqEeejArsKuGiivQ" outgoing="_zfFFUPYqEeejArsKuGiivQ _0EBlcvYqEeejArsKuGiivQ _X_ZAkPYrEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//Transition"/>
+          <attributes xmi:id="_JpqRIPYrEeejArsKuGiivQ" value="&quot;NEW-Transition&quot;">
+            <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_TPlCgPYrEeejArsKuGiivQ" incoming="_X_ZAkPYrEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//TimeEvent"/>
+          <attributes xmi:id="_aLHRQPYrEeejArsKuGiivQ" value="1">
+            <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//TimeEvent/time"/>
+          </attributes>
+        </nodes>
+        <edges xmi:id="_fp7f0PYqEeejArsKuGiivQ" source="_fp64wfYqEeejArsKuGiivQ" target="_fp64w_YqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/start"/>
+        </edges>
+        <edges xmi:id="_fp7f0_YqEeejArsKuGiivQ" source="_fp64wfYqEeejArsKuGiivQ" target="_fp7f0fYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+        </edges>
+        <edges xmi:id="_fp7f1PYqEeejArsKuGiivQ" source="_fp64wfYqEeejArsKuGiivQ" target="_fp64w_YqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/states"/>
+        </edges>
+        <edges xmi:id="_qxzzMPYqEeejArsKuGiivQ" source="_fp64wfYqEeejArsKuGiivQ" target="_mqlfIfYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//StateMachine/transitions"/>
+        </edges>
+        <edges xmi:id="_zfFFUPYqEeejArsKuGiivQ" source="_mqlfIfYqEeejArsKuGiivQ" target="_fp7f0fYqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_0EBlcvYqEeejArsKuGiivQ" source="_mqlfIfYqEeejArsKuGiivQ" target="_fp64w_YqEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//Transition/source"/>
+        </edges>
+        <edges xmi:id="_X_ZAkPYrEeejArsKuGiivQ" source="_mqlfIfYqEeejArsKuGiivQ" target="_TPlCgPYrEeejArsKuGiivQ">
+          <type href="../../at.ac.tuwien.big.tsm/model/tsm.ecore#//Transition/timer"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_fp8t8fYqEeejArsKuGiivQ" origin="_fp7f1fYqEeejArsKuGiivQ" image="_fp64wfYqEeejArsKuGiivQ"/>
+      <mappings xmi:id="_fp8t8vYqEeejArsKuGiivQ" origin="_fp8G4fYqEeejArsKuGiivQ" image="_fp64w_YqEeejArsKuGiivQ"/>
+      <mappings xmi:id="_fp8t8_YqEeejArsKuGiivQ" origin="_fp8G5PYqEeejArsKuGiivQ" image="_fp7f0fYqEeejArsKuGiivQ"/>
+      <multiMappings xmi:id="_fp64wvYqEeejArsKuGiivQ" origin="_3TuREPYpEeejArsKuGiivQ" image="_fp64wfYqEeejArsKuGiivQ"/>
+      <multiMappings xmi:id="_fp64xPYqEeejArsKuGiivQ" origin="_45mCsPYpEeejArsKuGiivQ" image="_fp64w_YqEeejArsKuGiivQ"/>
+      <multiMappings xmi:id="_fp7f0vYqEeejArsKuGiivQ" origin="_507CgPYpEeejArsKuGiivQ" image="_fp7f0fYqEeejArsKuGiivQ"/>
+      <multiMappings xmi:id="_fp8G4PYqEeejArsKuGiivQ" origin="_3TtqAPYpEeejArsKuGiivQ" image="_fp7f1fYqEeejArsKuGiivQ"/>
+      <multiMappings xmi:id="_fp8G4vYqEeejArsKuGiivQ" origin="_45lboPYpEeejArsKuGiivQ" image="_fp8G4fYqEeejArsKuGiivQ"/>
+      <multiMappings xmi:id="_fp8G5fYqEeejArsKuGiivQ" origin="_506bcPYpEeejArsKuGiivQ" image="_fp8G5PYqEeejArsKuGiivQ"/>
+    </multiRules>
+  </units>
+</henshin:Module>

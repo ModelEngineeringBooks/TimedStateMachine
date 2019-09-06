@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnmlcoremodel:PetriNetDoc xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pnmlcoremodel="http://org.pnml.tools/epnk/pnmlcoremodel">
+  <net id="PN1">
+    <name text="TrafficLightStateMachine"/>
+    <page id="P1">
+      <name text="MainPage"/>
+      <object xsi:type="pnmlcoremodel:Place" id="green">
+        <name text="green"/>
+      </object>
+      <object xsi:type="pnmlcoremodel:Place" id="yellow">
+        <name text="yellow"/>
+      </object>
+      <object xsi:type="pnmlcoremodel:Place" id="red">
+        <name text="red"/>
+      </object>
+      <object xsi:type="pnmlcoremodel:Transition" id="green-to-yellow">
+        <name text="green-to-yellow"/>
+      </object>
+      <object xsi:type="pnmlcoremodel:Transition" id="yellow-to-red">
+        <name text="yellow-to-red"/>
+      </object>
+      <object xsi:type="pnmlcoremodel:Transition" id="red-to-green">
+        <name text="red-to-green"/>
+      </object>
+      <object xsi:type="pnmlcoremodel:Arc" id="green-to-yellow-in" source="green" target="green-to-yellow"/>
+      <object xsi:type="pnmlcoremodel:Arc" id="yellow-to-red-in" source="yellow" target="yellow-to-red"/>
+      <object xsi:type="pnmlcoremodel:Arc" id="red-to-green-in" source="red" target="red-to-green"/>
+      <object xsi:type="pnmlcoremodel:Arc" id="green-to-yellow-out" source="green-to-yellow" target="yellow"/>
+      <object xsi:type="pnmlcoremodel:Arc" id="yellow-to-red-out" source="yellow-to-red" target="red"/>
+      <object xsi:type="pnmlcoremodel:Arc" id="red-to-green-out" source="red-to-green" target="green"/>
+    </page>
+  </net>
+</pnmlcoremodel:PetriNetDoc>

@@ -1,0 +1,37 @@
+module generator
+
+import org.eclipse.emf.mwe.utils.*
+
+var targetDir = "src-gen"
+var modelPath = "models"
+var slotID = "models-slot"
+
+Workflow {
+
+	bean = StandaloneSetup {
+		registerGeneratedEPackage = "at.ac.tuwien.big.tsm.TsmPackage"
+	}
+
+	component = DirectoryCleaner {
+		directory = targetDir
+	}
+
+	component = at.ac.tuwien.big.stl.codegen.TSMJavaGeneratorSupport {}
+
+	component = at.ac.tuwien.big.stl.codegen.OCLEnabledResourceReader {
+		path = modelPath
+		register = at.ac.tuwien.big.stl.codegen.TSMJavaGeneratorSetup {}
+		loadResource = {
+			slot = slotID
+		}
+	}
+
+	component = org.eclipse.xtext.generator.GeneratorComponent {
+		register = at.ac.tuwien.big.stl.codegen.TSMJavaGeneratorSetup {}
+		slot = slotID
+		outlet = {
+			path = targetDir
+		}
+	}
+	
+}

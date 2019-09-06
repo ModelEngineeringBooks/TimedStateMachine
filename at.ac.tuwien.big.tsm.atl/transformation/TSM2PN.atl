@@ -1,0 +1,72 @@
+-- @path TSM=/at.ac.tuwien.big.tsm/model/tsm.ecore
+-- @path PN=/org.pnml.tools.epnk/model/PNMLCoreModel.ecore
+
+
+module TSM2PN;
+create OUT: PN from IN: TSM;
+
+rule StateMachine2PN {
+	from
+		sm: TSM!StateMachine
+	to
+		doc: PN!PetriNetDoc (
+			net <- pn
+		),
+		pn: PN!PetriNet (
+			page <- page,
+			name <- pn_name,
+			id <- 'PN1'
+		),
+		page: PN!Page (
+			name <- page_name,
+			id <- 'P1',
+			object <- sm.states,
+			object <- sm.transitions,
+			object <- sm.transitions -> collect(t | thisModule.resolveTemp(t, 'arc_in')),
+			object <- sm.transitions -> collect(t | thisModule.resolveTemp(t, 'arc_out'))
+		),
+		pn_name: PN!Name (
+			text <- sm.name
+		),
+		page_name: PN!Name (
+			text <- 'MainPage'
+		)
+}
+
+rule State2Place {
+	from
+		state: TSM!State
+	to
+		place: PN!Place (
+			name <- nodename,
+			id <- state.name.toLower()
+		),
+		nodename: PN!Name (
+			text <- state.name
+		)
+}
+
+rule Transition2Transition {
+	from
+		tsm_transition: TSM!Transition
+	to
+		pn_transition: PN!Transition (
+			name <- pn_transition_name,
+			id <- tsm_transition.name.toLower(),
+			"in" <- arc_in,
+			out <- arc_out
+		),
+		pn_transition_name: PN!Name (
+			text <- tsm_transition.name
+		),
+		arc_in: PN!Arc (
+			id <- tsm_transition.name.toLower() + '-in',
+			source <- tsm_transition.source,
+			target <- pn_transition
+		),
+		arc_out: PN!Arc (
+			id <- tsm_transition.name.toLower() + '-out',
+			source <- pn_transition,
+			target <- tsm_transition.target
+		)
+}
